@@ -1,64 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Futuristic Web Template</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futurion</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/navigation.css">
+    <link rel="stylesheet" href="/css/services.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/hero.css">
+    <script defer src="/js/navigation.js"></script> <!-- Adding JavaScript for toggling menu -->
+    <script defer src="/js/portfolio.js"></script> <!-- Adding JavaScript for toggling menu -->
 </head>
 <body>
   <header class="header futuristic-header">
     <nav class="nav">
-      <a href="#home" class="nav-link">Home</a>
-      <a href="#services" class="nav-link">Services</a>
-      <a href="#portfolio" class="nav-link">Portfolio</a>
-      <a href="#contact" class="nav-link">Contact</a>
+        <a href="#" class="nav-logo">Futurion</a>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </div>
     </nav>
   </header>
 
-  <section id="home" class="hero-section">
-    <div class="hero-content">
-      <h1>Innovative Solutions for E-Commerce</h1>
-      <p>Transform your online business with our cutting-edge software and web development services.</p>
-      <a href="#contact" class="cta-button neon-button">Get Started</a>
-    </div>
-  </section>
+    <section id="home" class="hero-section">
+      <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1>Innovative Solutions for E-Commerce</h1>
+            <p>Transform your online business with our cutting-edge software and web development services.</p>
+            <a href="#contact" class="cta-button neon-button">Get Started</a>
+        </div>
+    </section>
 
-  <section id="services" class="services-section">
-    <h2>Our Services</h2>
-    <div class="service-card futuristic-card">
-      <h3>Custom Software Development</h3>
-      <p>Tailored software solutions to meet your business needs.</p>
-    </div>
-    <div class="service-card futuristic-card">
-      <h3>Website Design & Development</h3>
-      <p>Modern, responsive websites to elevate your online presence.</p>
-    </div>
-    <!-- Add more service cards as needed -->
-  </section>
+    <section id="services" class="services-section">
+      <h2 class="section-title">Our Futuristic Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="https://img.icons8.com/fluency/48/000000/code.png" alt="Web Development">
+          </div>
+          <h3>Web Development</h3>
+          <p>Building cutting-edge, responsive, and futuristic websites.</p>
+        </div>
+    
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="https://img.icons8.com/color/48/000000/e-commerce.png" alt="E-Commerce Solutions">
+          </div>
+          <h3>E-Commerce Solutions</h3>
+          <p>Complete e-commerce platforms to elevate your business.</p>
+        </div>
+    
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="https://img.icons8.com/color/48/000000/cloud.png" alt="Cloud Integration">
+          </div>
+          <h3>Cloud Integration</h3>
+          <p>Seamless cloud solutions for scalability and security.</p>
+        </div>
+    
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="https://img.icons8.com/color/48/000000/artificial-intelligence.png" alt="AI & Automation">
+          </div>
+          <h3>AI & Automation</h3>
+          <p>AI-powered automation to drive innovation and efficiency.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="portfolio" class="portfolio-section">
-    <h2>Our Work</h2>
-    <div class="portfolio-item futuristic-card">
-      <h3>Project Title</h3>
-      <p>Brief description of the project and its impact.</p>
-    </div>
-    <!-- Add more portfolio items as needed -->
-  </section>
+    <section id="portfolio" class="portfolio-section">
+      <h2 class="section-title">Our Futuristic Projects</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="app">Mobile Apps</button>
+        <button class="filter-btn" data-filter="ai">AI Solutions</button>
+      </div>
+      
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="portfolio-item" data-category="web">
+          <img src="https://media.istockphoto.com/id/1286825422/vector/futuristic-online-shopping-e-commerce-concept-with-glowing-smartphone-shopping-cart-credit.jpg?s=1024x1024&w=is&k=20&c=YtSCAElsBDJbzCEeFg_r4KGwX4J7RVQlXUEHFbr68qs=" alt="Project 1">
+          <div class="portfolio-overlay">
+            <h3>Futuristic E-Commerce Platform</h3>
+            <p>Cutting-edge, fully customizable e-commerce website for a retail brand.</p>
+            <a href="#" class="view-project-btn">View Project</a>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="portfolio-item" data-category="app">
+          <!-- <img src="https://via.placeholder.com/350x200" alt="Project 2"> -->
+          <img src="https://www.pewresearch.org/wp-content/uploads/sites/20/2023/06/PI_2023.06.20_best-worst-digital-2035_featured-jpg.webp?resize=640,360" alt="Project 2">
+          <div class="portfolio-overlay">
+            <h3>AI-powered Mobile Assistant</h3>
+            <p>A highly intuitive AI assistant app that learns user behavior and improves daily tasks.</p>
+            <a href="#" class="view-project-btn">View Project</a>
+          </div>
+        </div>
+    
+        <!-- Project 3 -->
+        <div class="portfolio-item" data-category="ai">
+          <img src="https://via.placeholder.com/350x200" alt="Project 3">
+          <div class="portfolio-overlay">
+            <h3>AI Chatbot Integration</h3>
+            <p>Developed a conversational AI chatbot for a customer service platform.</p>
+            <a href="#" class="view-project-btn">View Project</a>
+          </div>
+        </div>
+    
+        <!-- Project 4 -->
+        <div class="portfolio-item" data-category="web">
+          <img src="https://via.placeholder.com/350x200" alt="Project 4">
+          <div class="portfolio-overlay">
+            <h3>Futuristic Business Website</h3>
+            <p>Designed a futuristic, responsive website for a business consulting firm.</p>
+            <a href="#" class="view-project-btn">View Project</a>
+          </div>
+        </div>
+    
+        <!-- Project 5 -->
+        <div class="portfolio-item" data-category="app">
+          <img src="https://via.placeholder.com/350x200" alt="Project 5">
+          <div class="portfolio-overlay">
+            <h3>Next-Gen Fitness App</h3>
+            <p>A mobile app that integrates fitness tracking with AR for a futuristic experience.</p>
+            <a href="#" class="view-project-btn">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about" class="about-us-section">
+      <div class="about-us-container">
+        <div class="about-us-content">
+          <h2 class="about-us-title">About Us</h2>
+          <p class="about-us-description">
+            At <span class="company-name">Futurion Technologies</span>, we are dedicated to crafting cutting-edge software and web solutions for forward-thinking e-commerce companies in Ethiopia. Our mission is to provide innovative, scalable, and user-friendly digital platforms that help businesses grow and thrive in the digital age.
+          </p>
+          <p class="about-us-values">
+            With a passion for futuristic design, seamless UX, and the latest technologies, our team of experts brings ideas to life with precision, creativity, and a focus on impact.
+          </p>
+        </div>
+    
+        <div class="team-container">
+          <h3 class="team-title">Meet the Team</h3>
+          <div class="team-grid">
+            <div class="team-member-card">
+              <img src="team-member-1.jpg" alt="Team Member 1" class="team-member-image">
+              <h4 class="team-member-name">Gemechis Chala</h4>
+              <p class="team-member-role">Founder & CEO</p>
+            </div>
+    
+            <div class="team-member-card">
+              <img src="team-member-2.jpg" alt="Team Member 2" class="team-member-image">
+              <h4 class="team-member-name">Selam Tekle</h4>
+              <p class="team-member-role">Lead Developer</p>
+            </div>
+    
+            <div class="team-member-card">
+              <img src="team-member-3.jpg" alt="Team Member 3" class="team-member-image">
+              <h4 class="team-member-name">Abel Mulugeta</h4>
+              <p class="team-member-role">UI/UX Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="testimonials" class="testimonials-section">
+      <div class="testimonials-container">
+        <h2 class="testimonials-title">What Our Clients Say</h2>
+    
+        <div class="testimonials-slider">
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "Futurion Technologies transformed our e-commerce platform into a cutting-edge digital experience. Their innovative approach and attention to detail were remarkable!"
+            </p>
+            <div class="testimonial-author">
+              <img src="client1.jpg" alt="Client 1" class="testimonial-image">
+              <div class="author-info">
+                <h4 class="author-name">Amina Mekonnen</h4>
+                <p class="author-company">CEO, EthioShop</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "The team at Futurion took our vision and brought it to life with futuristic design and seamless user experience. Couldn't be happier with the results."
+            </p>
+            <div class="testimonial-author">
+              <img src="client2.jpg" alt="Client 2" class="testimonial-image">
+              <div class="author-info">
+                <h4 class="author-name">Samuel Demissie</h4>
+                <p class="author-company">Founder, AddisMarket</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "Their attention to detail and forward-thinking design set them apart. They delivered a website that exceeded our expectations."
+            </p>
+            <div class="testimonial-author">
+              <img src="client3.jpg" alt="Client 3" class="testimonial-image">
+              <div class="author-info">
+                <h4 class="author-name">Mekdes Alemayehu</h4>
+                <p class="author-company">Owner, Abyssinia Trade</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
 
-  <section id="contact" class="contact-section">
-    <h2>Contact Us</h2>
-    <form class="contact-form">
-      <input type="text" class="form-input" placeholder="Your Name" required>
-      <input type="email" class="form-input" placeholder="Your Email" required>
-      <textarea class="form-input" placeholder="Your Message" required></textarea>
-      <button type="submit" class="cta-button neon-button">Send Message</button>
-    </form>
-  </section>
-
-  <footer class="footer futuristic-footer">
-    <p>&copy; 2024 Your Company Name. All rights reserved.</p>
-    <a href="#home" class="footer-link">Back to Top</a>
-  </footer>
+    <section id="contact" class="contact-section" id="contact">
+      <h2 class="section-title">Get In Touch</h2>
+      
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <form class="contact-form">
+          <div class="input-group">
+            <input type="text" id="name" required>
+            <label for="name">Your Name</label>
+          </div>
+          
+          <div class="input-group">
+            <input type="email" id="email" required>
+            <label for="email">Your Email</label>
+          </div>
+    
+          <div class="input-group">
+            <textarea id="message" rows="4" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+    
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    
+        <!-- Contact Details -->
+        <!-- <div class="contact-info">
+          <p class="info-item">
+            <i class="fas fa-envelope"></i> 
+            <span>email@futuristicdomain.com</span>
+          </p>
+          <p class="info-item">
+            <i class="fas fa-phone"></i>
+            <span>+1 234 567 890</span>
+          </p>
+           -->
+          <!-- Social Media Links -->
+          <!-- <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div> -->
+    
+      <!-- Optional Map Section -->
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15761.15668014253!2d38.75467085!3d9.0373647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f5efcffebd3%3A0xda821c73ef928f93!2sPiazza%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1726631415234!5m2!1sen!2set" 
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+    
+    <footer class="footer footer-section">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2 class="footer-brand">Futurion Technologies</h2>
+          <p>Innovating the Future of E-commerce in Ethiopia</p>
+        </div>
+    
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Email: <a href="mailto:info@futuriontech.com">info@futuriontech.com</a></p>
+          <p>Phone: <a href="tel:+251123456789">+251 123 456 789</a></p>
+          <p>Location: Addis Ababa, Ethiopia</p>
+        </div>
+    
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="footer footer-bottom futuristic-footer">
+        <p>&copy; 2024 Futurion Technologies. All Rights Reserved.</p>
+        <a href="#home" class="footer-link">Back to Top</a>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,122 @@
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #00ffff;
+    text-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8);
+  }
+  
+  /* Contact Container */
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    align-items: center;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border: 2px solid #00ffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input, 
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #00ffff;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .input-group input:focus, 
+  .input-group textarea:focus {
+    border-color: #00ffcc;
+  }
+  
+  .input-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #aaa;
+    pointer-events: none;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .input-group input:focus + label, 
+  .input-group textarea:focus + label,
+  .input-group input:not(:placeholder-shown) + label, 
+  .input-group textarea:not(:placeholder-shown) + label {
+    transform: translateY(-25px);
+    color: #00ffff;
+  }
+  
+  .submit-btn {
+    background-color: #00ffff;
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #00ffcc;
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    text-align: left;
+  }
+  
+  .info-item {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .info-item i {
+    color: #00ffff;
+    margin-right: 10px;
+  }
+  
+  /* Social Links */
+  .social-links a {
+    margin: 0 10px;
+    color: #00ffff;
+    font-size: 2rem;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #00ffcc;
+  }
+  
+  /* Map Section */
+  .map-container {
+    margin-top: 40px;
+    border: 2px solid #00ffff;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
+    border-radius: 8px;
+  }
+  

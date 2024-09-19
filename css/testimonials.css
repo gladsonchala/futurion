@@ -1,0 +1,101 @@
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #111;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* To ensure hover doesn't exceed the section */
+  }
+  
+  .testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .testimonials-title {
+    font-size: 2.5em;
+    color: #00ffff;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+  
+  /* Slider Styles */
+  .testimonials-slider {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+    padding-left: 30px; /* Adjust padding to prevent left-side cut-off */
+    position: relative;
+  }
+  
+  /* Testimonial Card Styles */
+  .testimonial-card {
+    background-color: #1a1a1a;
+    border: 2px solid #00ffff;
+    padding: 20px;
+    width: 350px;
+    min-width: 350px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    z-index: 0;
+    position: relative;
+  }
+  
+  .testimonial-card:hover {
+    transform: scale(1.05);
+    z-index: 1; /* Make sure hovered card stays on top */
+  }
+  
+  .testimonial-quote {
+    font-size: 1.1em;
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .testimonial-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #00ffff;
+  }
+  
+  .author-info {
+    text-align: left;
+  }
+  
+  .author-name {
+    font-size: 1.2em;
+    color: #00ffff;
+  }
+  
+  .author-company {
+    font-size: 0.9em;
+    color: #aaa;
+  }
+  
+  /* Slider Styling */
+  .testimonials-slider::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .testimonials-slider::-webkit-scrollbar-thumb {
+    background: #00ffff;
+    border-radius: 10px;
+  }
+  
+  .testimonials-slider::-webkit-scrollbar-track {
+    background: #333;
+  }
+  
